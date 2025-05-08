@@ -1445,7 +1445,7 @@ export const getStaticProps: GetStaticProps = async ({ params, locale = 'ar' }) 
           id: '3',
           title: 'خدمة تتبع الشحنات المبردة: كيف تعمل وما فوائدها؟',
           slug: 'how_cold_chain_tracking_works_and_its_benefits',
-          coverImage: '/images/blog/how_cold_chain_tracking_works_and_its_benefits.jpeg',
+          coverImage: '/images/blog/how_cold_chain_tracking_works_and_its_benefits.jpg',
           date: '21 مايو 2025',
           excerpt: 'تعرف على كيفية عمل أنظمة تتبع الشحنات المبردة وفوائدها في تحسين جودة وسلامة المنتجات المنقولة.'
         },
