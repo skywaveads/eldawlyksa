@@ -124,17 +124,16 @@ export const getStaticPaths: GetStaticPaths = async () => {
     { slug: 'frozen_meat_transport_requirements_in_saudi_arabia' },
     { slug: 'when_to_rent_a_refrigerated_truck_in_saudi_arabia' },
     { slug: 'difference_between_chilled_and_frozen_transport' },
-    // New blog posts
+    // Main blog posts
     { slug: 'temperature_fluctuations_affect_medical_products' },
     { slug: 'refrigerated_transport_prices_saudi_arabia_2025' },
     { slug: 'how_companies_ensure_safe_cold_chain_delivery' },
     { slug: 'fastest_intercity_cold_transport_solutions_ksa' },
-    // Additional new blog posts
+    // Additional blog posts
     { slug: 'temperature_sensitive_delivery_solutions_in_jeddah' },
     { slug: 'best_refrigerated_trucks_for_delivery_in_dammam' },
     { slug: 'common_mistakes_in_cold_chain_shipping_saudi' },
     { slug: 'monthly_refrigerated_transport_contracts_saudi' },
-    // More new blog posts
     { slug: 'how_cold_chain_tracking_works_and_its_benefits' },
   ];
 
@@ -1604,11 +1603,17 @@ function getPrettyTitleFromSlug(slug: string): string {
     'frozen_meat_transport_requirements_in_saudi_arabia': 'متطلبات نقل اللحوم المجمدة في المملكة العربية السعودية',
     'when_to_rent_a_refrigerated_truck_in_saudi_arabia': 'متى تحتاج لاستئجار شاحنة مبردة في المملكة؟',
     'difference_between_chilled_and_frozen_transport': 'ما الفرق بين النقل المبرد والنقل المجمد؟ ولماذا يهم؟',
-    // New blog posts
+    // Main blog posts
     'temperature_fluctuations_affect_medical_products': 'هل يؤثر تغير درجة الحرارة على جودة المنتجات الطبية؟',
     'refrigerated_transport_prices_saudi_arabia_2025': 'أسعار النقل المبرد في السعودية 2025: ما الجديد؟',
     'how_companies_ensure_safe_cold_chain_delivery': 'كيف تحافظ شركات النقل المبرد على سلامة المنتجات؟',
-    'fastest_intercity_cold_transport_solutions_ksa': 'أسرع حلول لوجستية للنقل المبرد بين مدن المملكة'
+    'fastest_intercity_cold_transport_solutions_ksa': 'أسرع حلول لوجستية للنقل المبرد بين مدن المملكة',
+    // Additional blog posts
+    'common_mistakes_in_cold_chain_shipping_saudi': 'الأخطاء الشائعة في شحن سلسلة التبريد في السعودية',
+    'monthly_refrigerated_transport_contracts_saudi': 'عقود النقل المبرد الشهرية في المملكة العربية السعودية',
+    'how_cold_chain_tracking_works_and_its_benefits': 'خدمة تتبع الشحنات المبردة: كيف تعمل وما فوائدها؟',
+    'temperature_sensitive_delivery_solutions_in_jeddah': 'حلول توصيل المنتجات الحساسة للحرارة في جدة',
+    'best_refrigerated_trucks_for_delivery_in_dammam': 'أفضل شاحنات التبريد للتوصيل في الدمام'
   };
   
   return titles[slug] || 'مقال عن النقل المبرد';
@@ -1623,12 +1628,18 @@ function getImageFromSlug(slug: string): string {
     'frozen_meat_transport_requirements_in_saudi_arabia': 'frozen_meat_transport_requirements_in_saudi_arabia.jpeg',
     'when_to_rent_a_refrigerated_truck_in_saudi_arabia': 'when_to_rent_a_refrigerated_truck_in_saudi_arabia.png',
     'difference_between_chilled_and_frozen_transport': 'difference_between_chilled_and_frozen_transport.jpeg',
-    // New blog posts
+    // Article blog posts
     'temperature_fluctuations_affect_medical_products': 'temperature_fluctuations_affect_medical_products.jpeg',
     'refrigerated_transport_prices_saudi_arabia_2025': 'refrigerated_transport_prices_saudi_arabia_2025.jpeg',
     'how_companies_ensure_safe_cold_chain_delivery': 'how_companies_ensure_safe_cold_chain_delivery.jpg',
-    'fastest_intercity_cold_transport_solutions_ksa': 'fastest_intercity_cold_transport_solutions_ksa.jpeg'
+    'fastest_intercity_cold_transport_solutions_ksa': 'fastest_intercity_cold_transport_solutions_ksa.jpeg',
+    // Additional blog posts with featured images
+    'common_mistakes_in_cold_chain_shipping_saudi': 'common_mistakes_in_cold_chain_shipping_saudi.jpeg',
+    'monthly_refrigerated_transport_contracts_saudi': 'monthly_refrigerated_transport_contracts_saudi.jpeg',
+    'how_cold_chain_tracking_works_and_its_benefits': 'how_cold_chain_tracking_works_and_its_benefits.jpg',
+    'temperature_sensitive_delivery_solutions_in_jeddah': 'temperature_sensitive_delivery_solutions_in_jeddah.jpeg',
+    'best_refrigerated_trucks_for_delivery_in_dammam': 'best_refrigerated_trucks_for_delivery_in_dammam.jpg'
   };
   
-  return slugToImage[slug] || 'best_refrigerated_transport_company_in_saudi_arabia.jpeg';
+  return slugToImage[slug] || 'نقل_مبرد.png'; // Return default image if slug not found
 } 
