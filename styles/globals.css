@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-cairo: 'Cairo', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --navy: #00022b;
+  --cyan: #00b4d8;
+  --orange: #ff9f00;
+  --button-primary: #fbbf24; /* amber-400 */
+  --accent-color: #FFC107;
+  --whatsapp-color: #25D366;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-gray-800 rtl:text-right ltr:text-left;
+    font-family: var(--font-cairo), var(--font-poppins), sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold;
+  }
+  
+  [dir="ltr"] body {
+    font-family: var(--font-poppins), var(--font-cairo), sans-serif;
+  }
+  
+  [dir="rtl"] body {
+    font-family: var(--font-cairo), var(--font-poppins), sans-serif;
+  }
+  
+  /* Additional global styles */
+  .container {
+    @apply mx-auto px-4;
+  }
+  
+  /* Make buttons have consistent styling */
+  button, .btn {
+    @apply transition-all duration-300;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto max-w-7xl;
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 text-sm font-medium transition-all duration-300 rounded-full;
+  }
+  
+  .bg-gradient-primary {
+    background: linear-gradient(135deg, var(--accent-color), #f8d773);
+  }
+  
+  .shadow-button {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 10px;
+  }
+  
+  .btn-primary {
+    @apply text-black bg-gradient-primary shadow-button;
+  }
+  
+  .btn-secondary {
+    @apply text-primary-navy border border-primary-cyan hover:bg-primary-cyan hover:bg-opacity-10;
+  }
+  
+  .btn-whatsapp {
+    background-color: var(--whatsapp-color);
+    color: white;
+  }
+}
+
+/* Blog Article Styles */
+.prose h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.prose h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: white;
+}
+
+.prose p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.prose ul, .prose ol {
+  margin-bottom: 1.5rem;
+  padding-right: 1.25rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.prose ul li::before {
+  content: '•';
+  color: #4ade80; /* green-400 */
+  font-weight: bold;
+  position: absolute;
+  right: -1.25rem;
+}
+
+.prose blockquote {
+  border-right: 4px solid #4ade80; /* green-400 */
+  padding: 0.75rem 1.5rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 0.375rem;
+}
+
+.prose blockquote p {
+  margin-bottom: 0;
+}
+
+.prose a {
+  color: #4ade80; /* green-400 */
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  transition: color 0.2s ease;
+}
+
+.prose a:hover {
+  color: #22c55e; /* green-500 */
+}
+
+.prose img {
+  border-radius: 0.375rem;
+  margin: 2rem auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.prose figure {
+  margin: 2rem 0;
+}
+
+.prose figure figcaption {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #9ca3af; /* gray-400 */
+  margin-top: 0.5rem;
+}
+
+/* Dark mode styles for blog content */
+.prose-invert {
+  color: #f3f4f6; /* gray-100 */
+}
+
+.prose-invert h2, .prose-invert h3, .prose-invert h4 {
+  color: white;
+}
+
+.prose-invert a {
+  color: #4ade80; /* green-400 */
+}
+
+.prose-invert a:hover {
+  color: #34d399; /* green-300 */
+}
+
+.prose-invert code {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-family: monospace;
+}
+
+.prose-invert pre {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  border-radius: 0.375rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.prose-invert pre code {
+  background-color: transparent;
+  padding: 0;
+} 

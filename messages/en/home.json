@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "title": "Nabaa Al-Khaleej Refrigerated Transport",
+    "subtitle": "Best Refrigerated Transport Company in the Kingdom",
+    "description": "We provide integrated logistics services and professional refrigerated transport solutions that meet our customers' needs with the highest standards of quality and efficiency"
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "Nabaa Al-Khaleej offers a comprehensive range of refrigerated and general transport services to meet all your needs",
+    "items": {
+      "refrigerated": {
+        "title": "Refrigerated Transport",
+        "description": "Transport of perishable goods and refrigerated/frozen food at controlled temperatures"
+      },
+      "general": {
+        "title": "General Transport",
+        "description": "General cargo transport services of various types and sizes within the Kingdom"
+      },
+      "express": {
+        "title": "Express Transport",
+        "description": "Express transport services for urgent orders with guaranteed on-time delivery"
+      },
+      "tracking": {
+        "title": "Shipment Tracking",
+        "description": "Real-time shipment tracking to accurately locate your goods"
+      }
+    }
+  },
+  "why": {
+    "title": "Why Nabaa Al-Khaleej?",
+    "description": "Our company is distinguished by experience and professionalism in refrigerated transport with full commitment to quality standards",
+    "items": {
+      "experience": {
+        "title": "Extensive Experience",
+        "description": "More than 10 years of experience in refrigerated transport"
+      },
+      "quality": {
+        "title": "High Quality",
+        "description": "We adhere to the highest quality standards in all our services"
+      },
+      "coverage": {
+        "title": "Comprehensive Coverage",
+        "description": "We cover all regions of the Kingdom of Saudi Arabia"
+      },
+      "modern": {
+        "title": "Modern Fleet",
+        "description": "A fleet of modern refrigerated trucks equipped with the latest technologies"
+      }
+    }
+  },
+  "stats": {
+    "clients": {
+      "number": "4856",
+      "label": "Clients"
+    },
+    "shipments": {
+      "number": "23500",
+      "label": "Shipments"
+    },
+    "trucks": {
+      "number": "8",
+      "label": "Trucks"
+    },
+    "cities": {
+      "number": "45",
+      "label": "Cities"
+    }
+  },
+  "cta": {
+    "title": "Need Reliable Refrigerated Transport Services?",
+    "description": "Contact us now to get a quote and book your shipment"
+  }
+} 

@@ -1,0 +1,18 @@
+# robots.txt for Nabaa Al-Khaleej
+# https://nabaaalkhaleej.com
+# Last updated: 2025-05-08
+
+User-agent: *
+Allow: /
+
+# Prohibir acceso a páginas de error y administrativas
+Disallow: /404
+Disallow: /500
+Disallow: /api/
+Disallow: /admin/
+
+# Sitemap
+Sitemap: https://nabaaalkhaleej.com/sitemap.xml
+
+# Host
+Host: https://nabaaalkhaleej.com

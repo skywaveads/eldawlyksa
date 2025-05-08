@@ -1,0 +1,50 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "blog": "Blog",
+    "trackOrder": "Track Order",
+    "contact": "Contact Us",
+    "more": "More",
+    "services_in_ksa": "Services Across Saudi Arabia Regions",
+    "services_in_egypt": "Mannah's Local & International Transport Services in Egypt",
+    "specialTeam": "Our Dedicated Service Team",
+    "partners": "Mannah's 24/7 Service Partners",
+    "contactTeam": "Our Specialized Contact Team"
+  },
+  "buttons": {
+    "callNow": "Call Now",
+    "whatsapp": "WhatsApp",
+    "learnMore": "Learn More",
+    "sendMessage": "Send Message",
+    "trackNow": "Track Now"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "services": "Our Services",
+    "contactInfo": "Contact Info",
+    "rights": "All Rights Reserved",
+    "privacyPolicy": "Privacy Policy",
+    "terms": "Terms & Conditions"
+  },
+  "contact": {
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "message": "Message",
+    "address": "Address",
+    "successMessage": "Your message has been sent successfully, we'll contact you soon"
+  },
+  "tracking": {
+    "title": "Track Your Order",
+    "description": "Enter your tracking number to track your shipment",
+    "trackingNumber": "Tracking Number",
+    "noResults": "No shipment information found, please verify the tracking number",
+    "loadingStatus": "Loading..."
+  },
+  "language": {
+    "ar": "العربية",
+    "en": "English"
+  }
+} 

@@ -1,0 +1,50 @@
+{
+  "navigation": {
+    "home": "الرئيسية",
+    "about": "من نحن",
+    "services": "خدماتنا",
+    "blog": "المدونة",
+    "trackOrder": "تتبع الشحنة",
+    "contact": "اتصل بنا",
+    "more": "المزيد",
+    "services_in_ksa": "خدمات عبر مناطق المملكة العربية السعودية",
+    "services_in_egypt": "خدمات منه للنقل المحلي والدولي في مصر",
+    "specialTeam": "فريق العمل الخاص بخدمتكم",
+    "partners": "شركاء شركة منه في خدمتكم على مدار الساعة",
+    "contactTeam": "فريق مختص يتواصل معكم"
+  },
+  "buttons": {
+    "callNow": "اتصل الآن",
+    "whatsapp": "واتساب",
+    "learnMore": "المزيد",
+    "sendMessage": "إرسال",
+    "trackNow": "تتبع الآن"
+  },
+  "footer": {
+    "quickLinks": "روابط سريعة",
+    "services": "خدماتنا",
+    "contactInfo": "معلومات الاتصال",
+    "rights": "جميع الحقوق محفوظة",
+    "privacyPolicy": "سياسة الخصوصية",
+    "terms": "الشروط والأحكام"
+  },
+  "contact": {
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "phone": "رقم الهاتف",
+    "message": "الرسالة",
+    "address": "العنوان",
+    "successMessage": "تم إرسال رسالتك بنجاح، سنتواصل معك قريباً"
+  },
+  "tracking": {
+    "title": "تتبع الشحنة",
+    "description": "أدخل رقم الشحنة لتتبع طلبك",
+    "trackingNumber": "رقم الشحنة",
+    "noResults": "لم يتم العثور على معلومات الشحنة، يرجى التحقق من الرقم المدخل",
+    "loadingStatus": "جاري التحميل..."
+  },
+  "language": {
+    "ar": "العربية",
+    "en": "English"
+  }
+} 
