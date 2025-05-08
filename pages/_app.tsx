@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ErrorBoundary fallbackRender={fallbackRender}>
       <NextIntlClientProvider 
         locale="ar"
-        messages={pageProps.messages}
+        messages={pageProps.messages || {}}
         timeZone="Asia/Riyadh"
       >
         <div className={`${cairo.variable} font-sans`}>

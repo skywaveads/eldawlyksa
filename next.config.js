@@ -6,12 +6,15 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 /** @type {import('next').NextConfig} */
 const { locales, defaultLocale } = require('./next-intl.config.js');
 
+const isVercelBuild = process.env.VERCEL === '1';
+
 const nextConfig = {
   reactStrictMode: true,
-  i18n: {
-    locales: locales,
-    defaultLocale: defaultLocale,
-  },
+  // i18n debe ser deshabilitado para compilación en modo export
+  // i18n: {
+  //   locales: locales,
+  //   defaultLocale: defaultLocale,
+  // },
   images: {
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [
@@ -20,74 +23,29 @@ const nextConfig = {
         hostname: '**',
       },
     ],
+    unoptimized: true, // Necesario para export
   },
   compress: true,
-  async headers() {
-    return [
-      {
-        source: '/:path*',
-        headers: [
-          {
-            key: 'X-DNS-Prefetch-Control',
-            value: 'on',
-          },
-          {
-            key: 'Strict-Transport-Security',
-            value: 'max-age=63072000; includeSubDomains; preload',
-          },
-          {
-            key: 'X-XSS-Protection',
-            value: '1; mode=block',
-          },
-          {
-            key: 'X-Frame-Options',
-            value: 'SAMEORIGIN',
-          },
-          {
-            key: 'X-Content-Type-Options',
-            value: 'nosniff',
-          },
-          {
-            key: 'Referrer-Policy',
-            value: 'strict-origin-when-cross-origin',
-          },
-          {
-            key: 'Permissions-Policy',
-            value: 'camera=(), microphone=(), geolocation=(self), interest-cohort=()'
-          },
-          {
-            key: 'Content-Security-Policy',
-            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; frame-src 'self' https://www.youtube.com; object-src 'none'; upgrade-insecure-requests"
-          }
-        ],
-      },
-    ];
-  },
-  async redirects() {
-    return [
-      {
-        source: '/:path*',
-        has: [
-          {
-            type: 'header',
-            key: 'x-forwarded-proto',
-            value: 'http',
-          },
-        ],
-        destination: 'https://:host/:path*',
-        permanent: true,
-      },
-      {
-        source: '/services-refrigerated',
-        destination: '/services#refrigerated',
-        permanent: true,
-      },
-      {
-        source: '/services-general',
-        destination: '/services#general',
-        permanent: true,
-      },
-    ];
+  distDir: '.next',
+  output: 'export', // Para solucionar el problema "Invariant: page wasn't built"
+  trailingSlash: false,
+  poweredByHeader: false,
+  productionBrowserSourceMaps: false,
+  // Headers no son compatibles con output: export
+  // async headers() {...},
+  // Redirects no son compatibles con output: export
+  // async redirects() {...},
+  
+  // Excluir páginas problemáticas que causan conflictos
+  pageExtensions: ['tsx', 'ts', 'jsx', 'js'],
+  webpack: (config, { dev, isServer }) => {
+    // Excluir el componente de blog dinámico para evitar conflictos
+    if (!dev && !isServer) {
+      Object.assign(config.resolve.alias, {
+        'pages/blog/[slug]': false,
+      });
+    }
+    return config;
   },
 };
 

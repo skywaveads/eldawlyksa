@@ -1,3 +1,29 @@
+# Nabaa Al-Khaleej - Refrigerated Transport Company
+
+## Despliegue en Vercel
+
+Para desplegar este proyecto en Vercel, sigue los siguientes pasos:
+
+1. **Preparación del proyecto**:
+   - Asegúrate de que el repositorio está actualizado con los últimos cambios
+   - La configuración para Vercel ya está incluida en `vercel.json` y `next.config.js`
+
+2. **Configuración en Vercel**:
+   - Importa el proyecto desde GitHub
+   - Configura las variables de entorno según `vercel.env`
+   - Especifica la rama de producción (generalmente `main` o `master`)
+
+3. **Comandos de construcción**:
+   - Build command: `npm run build`
+   - Output directory: `out`
+   - Install command: `npm install`
+
+4. **Solución de problemas comunes**:
+   - Si aparece el error "Invariant: page wasn't built", verifica la configuración de modo export
+   - Para problemas con páginas dinámicas de blog, revisa la configuración webpack
+
+## Información general del proyecto
+
 # Nabaa Al-Khaleej - Sitio Web Optimizado
 
 Este proyecto es el sitio web oficial de Nabaa Al-Khaleej para servicios de transporte refrigerado en Arabia Saudita.
