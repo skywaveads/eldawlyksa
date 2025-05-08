@@ -10,6 +10,21 @@ interface SeoProps {
   ogType?: 'website' | 'article' | 'product';
   ogImage?: string;
   jsonLd?: Record<string, any> | Record<string, any>[];
+  openGraph?: {
+    images?: Array<{
+      url: string;
+      width?: number;
+      height?: number;
+      alt?: string;
+    }>;
+    type?: string;
+    article?: {
+      publishedTime?: string;
+      authors?: string[];
+      tags?: string[];
+    };
+    [key: string]: any;
+  };
 }
 
 const Seo = ({
@@ -19,6 +34,7 @@ const Seo = ({
   ogType = 'website',
   ogImage = '/images/og-image.jpg',
   jsonLd,
+  openGraph,
 }: SeoProps) => {
   const router = useRouter();
   const siteName = 'شركة نبع الخليج للنقل المبرد';
@@ -65,42 +81,60 @@ const Seo = ({
   // Si se proporcionan datos estructurados específicos, usarlos; de lo contrario, usar los por defecto
   const structuredData = jsonLd || defaultJsonLd;
 
-  return (
-    <Head>
-      {/* Metadatos básicos */}
-      <title>{title}</title>
-      <meta name="description" content={finalDescription} />
-      <link rel="canonical" href={canonical} />
-      
-      {/* Open Graph */}
-      <meta property="og:locale" content="ar_SA" />
-      <meta property="og:type" content={ogType} />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={finalDescription} />
-      <meta property="og:url" content={canonical} />
-      <meta property="og:site_name" content={siteName} />
-      <meta property="og:image" content={`${siteUrl}${ogImage}`} />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
-      
-      {/* Twitter */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={finalDescription} />
-      <meta name="twitter:image" content={`${siteUrl}${ogImage}`} />
-      
-      {/* Datos estructurados (JSON-LD) */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData)
-        }}
-      />
+  // Configurar OpenGraph por defecto si no se proporciona
+  const defaultOpenGraph = {
+    title,
+    description: finalDescription,
+    url: canonical,
+    type: ogType,
+    images: [
+      {
+        url: `${siteUrl}${ogImage}`,
+        width: 1200,
+        height: 630,
+        alt: title,
+      },
+    ],
+  };
 
-      {/* Verificaciones para motores de búsqueda */}
-      <meta name="google-site-verification" content="GOOGLE_VERIFICATION_CODE" />
-      <meta name="msvalidate.01" content="BING_VERIFICATION_CODE" />
-    </Head>
+  // Usar openGraph proporcionado o el por defecto
+  const finalOpenGraph = openGraph || defaultOpenGraph;
+
+  return (
+    <>
+      <Head>
+        {/* Metadatos básicos */}
+        <title>{title}</title>
+        <meta name="description" content={finalDescription} />
+        <link rel="canonical" href={canonical} />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={finalDescription} />
+        <meta name="twitter:image" content={`${siteUrl}${ogImage}`} />
+        
+        {/* Datos estructurados (JSON-LD) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(structuredData)
+          }}
+        />
+
+        {/* Verificaciones para motores de búsqueda */}
+        <meta name="google-site-verification" content="GOOGLE_VERIFICATION_CODE" />
+        <meta name="msvalidate.01" content="BING_VERIFICATION_CODE" />
+      </Head>
+      
+      {/* Usar NextSeo para Open Graph avanzado */}
+      <NextSeo
+        title={title}
+        description={finalDescription}
+        canonical={canonical}
+        openGraph={finalOpenGraph}
+      />
+    </>
   );
 };
 
