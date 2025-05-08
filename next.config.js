@@ -23,11 +23,11 @@ const nextConfig = {
         hostname: '**',
       },
     ],
-    unoptimized: true, // Necesario para export
+    unoptimized: isVercelBuild ? false : true, // Only unoptimized for local builds
   },
   compress: true,
   distDir: '.next',
-  output: 'export', // Para solucionar el problema "Invariant: page wasn't built"
+  // Remove output: 'export' for Vercel deployment
   trailingSlash: false,
   poweredByHeader: false,
   productionBrowserSourceMaps: false,

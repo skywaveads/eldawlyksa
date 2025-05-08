@@ -1,23 +1,16 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://www.nabaaalkhaleej.com',
+  siteUrl: process.env.SITE_URL || 'https://eldawly.sa',
   generateRobotsTxt: true,
+  outDir: 'out',
+  // Optional: Change to get more control
+  generateIndexSitemap: false,
+  exclude: ['/server-sitemap.xml'],
   robotsTxtOptions: {
-    policies: [
-      {
-        userAgent: '*',
-        allow: '/',
-        disallow: ['/api/*', '/admin/*'],
-      },
-    ],
     additionalSitemaps: [
-      'https://www.nabaaalkhaleej.com/sitemap.xml',
-      'https://www.nabaaalkhaleej.com/server-sitemap.xml',
-      'https://www.nabaaalkhaleej.com/blog-sitemap.xml',
+      'https://eldawly.sa/server-sitemap.xml',
     ],
   },
-  exclude: ['/404', '/500', '/server-sitemap.xml'],
-  outDir: './public',
   // Alternate languages for each page
   alternateRefs: [
     {
