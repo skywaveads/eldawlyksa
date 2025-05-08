@@ -38,7 +38,7 @@ const Footer = () => {
           <div className="w-full md:w-1/4 mb-8 md:mb-0">
             <div className="flex flex-col items-center md:items-start">
               <Link href="/" aria-label="Nabaa Al-Khaleej - Home" className="mb-4">
-                <div className="relative w-[80px] h-[80px] md:w-[100px] md:h-[100px] logo-shine-effect">
+                <div className="relative w-[70px] h-[70px] md:w-[85px] md:h-[85px] logo-shine-effect">
                   <div className="circle circle-1"></div>
                   <div className="circle circle-2"></div>
                   <div className="circle circle-3"></div>
@@ -48,7 +48,7 @@ const Footer = () => {
                     src={`/images/logo.png?v=${logoUpdateTime}`}
                     alt="شركة نبع الخليج للنقل المبرد" 
                     fill
-                    sizes="(max-width: 768px) 80px, 100px"
+                    sizes="(max-width: 768px) 70px, 85px"
                     style={{ objectFit: 'contain' }} 
                   />
                 </div>
@@ -69,36 +69,36 @@ const Footer = () => {
                   opacity: 0;
                 }
                 .circle-1 {
-                  width: 16px;
-                  height: 16px;
+                  width: 14px;
+                  height: 14px;
                   animation: circle-animation 3s infinite ease-out;
                   animation-delay: 0s;
                   border-color: rgba(3, 169, 244, 0.7);
                 }
                 .circle-2 {
-                  width: 24px;
-                  height: 24px;
+                  width: 20px;
+                  height: 20px;
                   animation: circle-animation 3s infinite ease-out;
                   animation-delay: 0.5s;
                   border-color: rgba(3, 169, 244, 0.6);
                 }
                 .circle-3 {
-                  width: 32px;
-                  height: 32px;
+                  width: 28px;
+                  height: 28px;
                   animation: circle-animation 3s infinite ease-out;
                   animation-delay: 1s;
                   border-color: rgba(3, 169, 244, 0.5);
                 }
                 .circle-4 {
-                  width: 40px;
-                  height: 40px;
+                  width: 35px;
+                  height: 35px;
                   animation: circle-animation 3s infinite ease-out;
                   animation-delay: 1.5s;
                   border-color: rgba(3, 169, 244, 0.4);
                 }
                 .circle-5 {
-                  width: 48px;
-                  height: 48px;
+                  width: 42px;
+                  height: 42px;
                   animation: circle-animation 3s infinite ease-out;
                   animation-delay: 2s;
                   border-color: rgba(3, 169, 244, 0.3);
