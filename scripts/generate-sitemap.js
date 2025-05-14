@@ -4,7 +4,7 @@ const glob = require('glob');
 require('dotenv').config(); // Cargar variables de entorno
 
 // Configuración
-const DOMAIN = process.env.NEXT_PUBLIC_SITE_URL || 'https://nabaaalkhaleej.com';
+const DOMAIN = process.env.NEXT_PUBLIC_SITE_URL || 'https://eldawlyksa.com';
 const PAGES_DIR = path.join(process.cwd(), 'pages');
 const PUBLIC_DIR = path.join(process.cwd(), 'public');
 const EXCLUDED_PAGES = ['_app.tsx', '_document.tsx', '_error.tsx', 'api', '404.tsx', '500.tsx', '500.js', '404.js'];

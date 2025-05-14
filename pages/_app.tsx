@@ -50,15 +50,19 @@ function MyApp({ Component, pageProps }: AppProps) {
                 name: 'theme-color',
                 content: '#00022b',
               },
+              {
+                property: 'og:image',
+                content: 'https://www.eldawlyksa.com/images/logo.png',
+              },
             ]}
             openGraph={{
               type: 'website',
               locale: 'ar_SA',
-              url: 'https://www.nabaaalkhaleej.com',
-              site_name: 'شركة نبع الخليج للنقل المبرد',
+              url: 'https://www.eldawlyksa.com',
+              siteName: 'شركة نبع الخليج للنقل المبرد',
               images: [
                 {
-                  url: 'https://www.nabaaalkhaleej.com/images/logo.png',
+                  url: 'https://www.eldawlyksa.com/images/logo.png',
                   width: 1200,
                   height: 630,
                   alt: 'شركة نبع الخليج للنقل المبرد',

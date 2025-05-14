@@ -67,34 +67,43 @@ export default function BlogPost({ post }: BlogPostProps) {
       <Seo
         pageTitle={post.title}
         description={post.excerpt}
-        canonicalUrl={`https://www.nabaaalkhaleej.com/blog/${post.slug}`}
+        ogType="article"
+        ogImage={post.coverImage}
+        canonicalUrl={`https://www.eldawlyksa.com/blog/${post.slug}`}
         openGraph={{
-          images: [
-            {
-              url: post.coverImage,
-              width: 1200,
-              height: 630,
-              alt: post.title,
-            },
-          ],
-          type: 'article',
           article: {
-            publishedTime: formatDateToISO(post.date),
-            authors: [post.author.name],
-            tags: post.tags ? post.tags.map(tag => tag.name) : ['refrigerated transport', 'logistics', 'Saudi Arabia'],
+            publishedTime: post.date,
+            authors: ['شركة نبع الخليج'],
+            tags: post.tags || [],
           },
+        }}
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          headline: post.title,
+          image: post.coverImage,
+          author: {
+            "@type": "Organization",
+            name: "شركة نبع الخليج للنقل المبرد",
+            url: `https://www.eldawlyksa.com/blog/${post.slug}`,
+            logo: {
+              "@type": "ImageObject",
+              url: "https://www.eldawlyksa.com/images/logo.png"
+            }
+          },
+          // ... existing code ...
         }}
       />
       
       <ArticleJsonLd
-        url={`https://www.nabaaalkhaleej.com/blog/${post.slug}`}
+        url={`https://www.eldawlyksa.com/blog/${post.slug}`}
         title={post.title}
         images={[post.coverImage]}
         datePublished={formatDateToISO(post.date)}
         dateModified={formatDateToISO(post.date)}
         authorName={post.author.name}
         publisherName="شركة نبع الخليج للنقل المبرد"
-        publisherLogo="https://www.nabaaalkhaleej.com/images/logo.png"
+        publisherLogo="https://www.eldawlyksa.com/images/logo.png"
         description={post.excerpt}
       />
 

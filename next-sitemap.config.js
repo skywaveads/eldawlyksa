@@ -14,11 +14,11 @@ module.exports = {
   // Alternate languages for each page
   alternateRefs: [
     {
-      href: 'https://www.nabaaalkhaleej.com',
+      href: 'https://www.eldawlyksa.com',
       hreflang: 'ar',
     },
     {
-      href: 'https://www.nabaaalkhaleej.com/en',
+      href: 'https://www.eldawlyksa.com/en',
       hreflang: 'en',
     },
   ],

@@ -176,52 +176,52 @@ const ArticleTemplate = ({
               <div className="flex space-x-4 rtl:space-x-reverse">
                 {/* Facebook */}
                 <a
-                  href={`https://www.facebook.com/sharer/sharer.php?u=https://www.nabaaalkhaleej.com/blog/${slug}`}
+                  href={`https://www.facebook.com/sharer/sharer.php?u=https://www.eldawlyksa.com/blog/${slug}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-blue-600 hover:bg-blue-700 text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors"
+                  className="text-facebook hover:opacity-80 transition-opacity"
                   aria-label="Share on Facebook"
                 >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z" />
                   </svg>
                 </a>
                 
                 {/* Twitter/X */}
                 <a
-                  href={`https://twitter.com/intent/tweet?url=https://www.nabaaalkhaleej.com/blog/${slug}&text=${encodeURIComponent(title)}`}
+                  href={`https://twitter.com/intent/tweet?url=https://www.eldawlyksa.com/blog/${slug}&text=${encodeURIComponent(title)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-black hover:bg-gray-800 text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors"
-                  aria-label="Share on Twitter/X"
+                  className="text-twitter hover:opacity-80 transition-opacity"
+                  aria-label="Share on Twitter"
                 >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                   </svg>
                 </a>
                 
                 {/* LinkedIn */}
                 <a
-                  href={`https://www.linkedin.com/shareArticle?mini=true&url=https://www.nabaaalkhaleej.com/blog/${slug}&title=${encodeURIComponent(title)}`}
+                  href={`https://www.linkedin.com/shareArticle?mini=true&url=https://www.eldawlyksa.com/blog/${slug}&title=${encodeURIComponent(title)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-blue-800 hover:bg-blue-900 text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors"
+                  className="text-linkedin hover:opacity-80 transition-opacity"
                   aria-label="Share on LinkedIn"
                 >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
                   </svg>
                 </a>
                 
                 {/* WhatsApp */}
                 <a
-                  href={`https://api.whatsapp.com/send?text=${encodeURIComponent(title)} https://www.nabaaalkhaleej.com/blog/${slug}`}
+                  href={`https://api.whatsapp.com/send?text=${encodeURIComponent(title)} https://www.eldawlyksa.com/blog/${slug}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-green-600 hover:bg-green-700 text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors"
+                  className="text-whatsapp hover:opacity-80 transition-opacity"
                   aria-label="Share on WhatsApp"
                 >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347" />
                   </svg>
                 </a>

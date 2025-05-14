@@ -79,9 +79,30 @@ export default function Blog({ posts, featuredPosts, categories }: BlogProps) {
   return (
     <Layout>
       <Seo 
-        pageTitle={t('title')}
-        description={t('metaDescription')}
-        canonicalUrl="https://www.nabaaalkhaleej.com/blog"
+        pageTitle="مدونة شركة نبع الخليج للنقل المبرد"
+        description="آخر المقالات والأخبار حول النقل المبرد في المملكة العربية السعودية، نصائح وإرشادات للحفاظ على جودة المنتجات أثناء النقل"
+        canonicalUrl="https://www.eldawlyksa.com/blog"
+        jsonLd={[
+          // Breadcrumb
+          {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                item: 'https://www.eldawlyksa.com',
+                name: 'الرئيسية',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                item: 'https://www.eldawlyksa.com/blog',
+                name: 'المدونة',
+              },
+            ],
+          },
+        ]}
       />
       
       <BreadcrumbJsonLd
@@ -89,12 +110,12 @@ export default function Blog({ posts, featuredPosts, categories }: BlogProps) {
           {
             position: 1,
             name: 'Home',
-            item: 'https://www.nabaaalkhaleej.com',
+            item: 'https://www.eldawlyksa.com',
           },
           {
             position: 2,
             name: t('title'),
-            item: 'https://www.nabaaalkhaleej.com/blog',
+            item: 'https://www.eldawlyksa.com/blog',
           },
         ]}
       />

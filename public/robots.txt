@@ -1,6 +1,6 @@
 # robots.txt for Nabaa Al-Khaleej
-# https://nabaaalkhaleej.com
-# Last updated: 2025-05-08
+# https://eldawlyksa.com
+# Last updated: 2025-05-14
 
 User-agent: *
 Allow: /
@@ -12,7 +12,7 @@ Disallow: /api/
 Disallow: /admin/
 
 # Sitemap
-Sitemap: https://nabaaalkhaleej.com/sitemap.xml
+Sitemap: https://eldawlyksa.com/sitemap.xml
 
 # Host
-Host: https://nabaaalkhaleej.com
+Host: https://eldawlyksa.com

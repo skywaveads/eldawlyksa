@@ -38,7 +38,7 @@ const Seo = ({
 }: SeoProps) => {
   const router = useRouter();
   const siteName = 'شركة نبع الخليج للنقل المبرد';
-  const siteUrl = 'https://nabaaalkhaleej.com';
+  const siteUrl = 'https://eldawlyksa.com';
 
   // Si no se proporciona un título específico, usar un título por defecto
   const title = pageTitle 
