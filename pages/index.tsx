@@ -183,7 +183,7 @@ export default function Home({ blogPosts }: { blogPosts: BlogPostSummary[] }) {
         whatsAppNumber="+966561475554"
       />
 
-      {/* شركة الدولي اللوجستية Section */}
+      {/* شركة نبع الخليج للنقل المبرد وسريع Section */}
       <section className="py-16 bg-[#00022b] text-white">
         <div className="container">
           <div className="text-center mb-10">
@@ -275,12 +275,12 @@ export default function Home({ blogPosts }: { blogPosts: BlogPostSummary[] }) {
                 className="object-contain"
               />
               <div className="absolute inset-0 flex items-center justify-center">
-                <h2 className="text-4xl font-bold text-white px-6 py-3 bg-primary-navy/70 rounded-lg">لماذا نحن</h2>
+                <h2 className="text-4xl font-bold text-white px-6 py-3 bg-primary-navy/70 rounded-lg">لماذا شركة نبع الخليج</h2>
               </div>
             </div>
             <div className="h-1 w-24 bg-amber-400 mx-auto mb-8"></div>
             <p className="text-white/80 max-w-3xl mx-auto">
-              شركة الدولي اللوجستية إختيارك الأول لخدمات النقل المبرد
+              شركة نبع الخليج إختيارك الأول لخدمات النقل المبرد
             </p>
             <p className="text-white/80 max-w-4xl mx-auto mt-4">
               أسطول سيارات في خدمتكم بتعاقد شهري سنوي، وبالمشوار نقل المبرد والمجمد والجاف بين جميع مناطق المملكة وداخل جميع المدن وبين المدن خبرة أكثر من خمسة عشر سنة في مجال النقل المبرد داخل المملكة
@@ -345,7 +345,7 @@ export default function Home({ blogPosts }: { blogPosts: BlogPostSummary[] }) {
                 <h3 className="text-2xl md:text-3xl font-bold mb-6 text-amber-400 text-center bg-transparent" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8), 0 0 5px rgba(0,0,34,0.6)' }}>الأفضل في النقل المبرد بالمملكة العربية السعودية</h3>
                 
                 <p className="text-white/90 mb-5 text-right text-lg leading-relaxed" style={{ textShadow: '0 0 3px rgba(0,0,0,0.7)' }}>
-                  شركة الدولي اللوجستية للنقل المبرد تتميز في خدمة نقل المبرد ونقل البضائع الحساسة للحرارة في المملكة. نقدم خدمات ذات جودة عالية ومهنية مع توفير السلامة والموثوقية. نقدم حلاً متكاملاً لاحتياجات نقل البضائع والمواد الحرارية في جميع انحاء المملكة.
+                  شركة نبع الخليج للنقل المبرد تتميز في خدمة نقل المبرد ونقل البضائع الحساسة للحرارة في المملكة. نقدم خدمات ذات جودة عالية ومهنية مع توفير السلامة والموثوقية. نقدم حلاً متكاملاً لاحتياجات نقل البضائع والمواد الحرارية في جميع انحاء المملكة.
                 </p>
                 
                 <p className="text-white/90 mb-5 text-right text-lg leading-relaxed" style={{ textShadow: '0 0 3px rgba(0,0,0,0.7)' }}>
@@ -353,11 +353,11 @@ export default function Home({ blogPosts }: { blogPosts: BlogPostSummary[] }) {
                 </p>
                 
                 <p className="text-white/90 mb-6 text-right text-lg leading-relaxed" style={{ textShadow: '0 0 3px rgba(0,0,0,0.7)' }}>
-                  شركة الدولي تفتخر بمصداقيتها وثقة عملاؤها بها تعكس جودة الخدمات التي نقدمها. بفضل تقييمات المستخدمين والمراجعات الإيجابية، يمكن للعملاء الاعتماد على جودة خدمات الشركة واحتراميتها. نقدم خدمات عالية الجودة والامتثال لأعلى معايير الجودة هي جزء من التزام الشركه بإرضاء العملاء وبناء علاقات طويلة الأمد.
+                  شركة نبع الخليج تفتخر بمصداقيتها وثقة عملاؤها بها تعكس جودة الخدمات التي نقدمها. بفضل تقييمات المستخدمين والمراجعات الإيجابية، يمكن للعملاء الاعتماد على جودة خدمات الشركة واحتراميتها. نقدم خدمات عالية الجودة والامتثال لأعلى معايير الجودة هي جزء من التزام الشركه بإرضاء العملاء وبناء علاقات طويلة الأمد.
                 </p>
                 
                 <p className="text-white/90 mb-7 text-right text-lg leading-relaxed font-semibold" style={{ textShadow: '0 0 3px rgba(0,0,0,0.7)' }}>
-                  تثبت هذه الثقة المستمرة لأن شركة الدولي للخدمات اللوجستية هي الشركة المثلى لاحتياجات نقل المبرد في المملكة. اختر شركة الدولي لتجربة خدمة استثنائية تلبي جميع متطلباتك في مجال النقل المبرد.
+                  تثبت هذه الثقة المستمرة لأن شركة نبع الخليج هي الشركة المثلى لاحتياجات نقل المبرد في المملكة. اختر شركة نبع الخليج لتجربة خدمة استثنائية تلبي جميع متطلباتك في مجال النقل المبرد.
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6 p-3 rounded-lg bg-transparent">
