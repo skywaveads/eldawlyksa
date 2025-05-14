@@ -184,11 +184,11 @@ const Footer = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                   <a 
-                    href="mailto:info@nabaaalkhaleej.com" 
+                    href="mailto:nabealkhalij2025@gmail.com" 
                     className="text-gray-300 hover:text-white transition-colors text-center sm:text-right"
                     aria-label="Email us"
                   >
-                    info@nabaaalkhaleej.com
+                    nabealkhalij2025@gmail.com
                   </a>
                 </li>
                 <li className="flex flex-wrap justify-center sm:justify-start sm:flex-nowrap">
