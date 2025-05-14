@@ -74,7 +74,7 @@ export default function BlogPost({ post }: BlogPostProps) {
           article: {
             publishedTime: post.date,
             authors: ['شركة نبع الخليج'],
-            tags: post.tags || [],
+            tags: post.tags ? post.tags.map(tag => tag.name) : [],
           },
         }}
         jsonLd={{
