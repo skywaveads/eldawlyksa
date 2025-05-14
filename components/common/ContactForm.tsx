@@ -114,7 +114,7 @@ const ContactForm = ({ className }: ContactFormProps) => {
   return (
     <div className={clsx('bg-white p-6 md:p-8 rounded-lg shadow-md', className)}>
       <h3 className="text-2xl font-bold mb-6 text-primary-navy">
-        {t('contact.title')}
+        تواصل معنا
       </h3>
       
       {isSuccess && (
