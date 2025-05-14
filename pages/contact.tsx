@@ -17,7 +17,12 @@ export default function Contact() {
     {
       id: 'phone',
       title: 'رقم الهاتف',
-      content: '+966 561 475 554',
+      content: (
+        <div className="flex flex-col items-center">
+          <span>+966 561 475 554</span>
+          <span>+966 54 126 6640</span>
+        </div>
+      ),
       link: 'tel:+966561475554',
       icon: (
         <svg className="w-8 h-8 text-primary-cyan" fill="none" viewBox="0 0 24 24" stroke="currentColor">
